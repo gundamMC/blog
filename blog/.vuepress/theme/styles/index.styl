@@ -1,0 +1,74 @@
+@require './custom-blocks'
+@require './dark'
+  
+h1, h2, h3, h4, h5, h6
+  margin-bottom 16px
+  &:hover .header-anchor
+    opacity 1
+
+a.header-anchor
+  font-size 0.85em
+  float left
+  margin-left -0.87em
+  padding-right 0.23em
+  margin-top 0.125em
+  opacity 0
+  -webkit-transition opacity 0.2s ease-in-out;
+  -moz-transition opacity 0.2s ease-in-out;
+  -ms-transition opacity 0.2s ease-in-out;
+  -o-transition opacity 0.2s ease-in-out;
+  transition opacity 0.2s ease-in-out;
+
+  &:hover
+    text-decoration none
+
+h2
+  border-bottom 1px solid $borderColor
+
+.underlineLink
+ color #000
+ text-decoration none
+  &:hover
+    text-decoration underline
+
+.content__default
+  img
+    max-width 100%
+    max-height 40vh
+
+
+  blockquote 
+    border-left 3px solid #E0E0E0
+    color #757575
+    padding-left 1em
+
+  p > code, a > code, td > code, th > code, li > code
+    background-color: #EEEEEE
+    padding: 0.1rem 0.2rem
+    margin: 0
+    font-size: 0.85em
+    font-family: Roboto Mono, monospace
+
+  table {
+    width: 100%
+    margin-bottom: 10px
+    display: block
+    overflow: auto
+    border-collapse: collapse
+    td, th {
+      border: 1px solid #E0E0E0
+      padding: 0.5em 1em
+    }
+    @media (max-width: 960px) { // <= md
+      & {
+        word-break: keep-all
+      }
+    }
+  }
+
+.v-application a.link
+  color #000
+  text-decoration none
+
+.v-application a.link:hover
+  text-decoration underline
