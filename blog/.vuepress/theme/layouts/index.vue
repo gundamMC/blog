@@ -41,13 +41,13 @@
                     </v-img>
 
                     <h4 class="text-h4 mt-4 mb-0"><a :href="mostRecent.path" class="link"> {{ mostRecent.title }} </a></h4>
-                    <DateTagSpan :page="mostRecent" :hideUpdate="false"/>
+                    <DateTagSpan :page="mostRecent" :hideUpdate="true"/>
                 </v-col>
 
                 <v-col cols="5" class="mt-16">
                     <div v-for="post in recentPosts">
                         <h5 class="text-h5 mb-0"><a :href="post.path" class="link"> {{post.title}} </a></h5>
-                        <DateTagSpan :page="post" :hideUpdate="false"/>
+                        <DateTagSpan :page="post" :hideUpdate="true"/>
                     </div>
                 </v-col>
             </v-row>
