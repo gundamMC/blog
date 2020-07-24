@@ -78,7 +78,7 @@ export default {
             document.cookie = `dark=${dark}` + "; path=/"  // make cookie sitewide
         }
     },
-    created() {
+    mounted() {
         this.$vuetify.theme.dark = document.cookie.match(/dark=true/i) != null
     }
 }
