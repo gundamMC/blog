@@ -6,7 +6,7 @@
         </template>
 
         <template #sidebarRight>
-            <Sidebar v-if="!$pagination"/>
+            <Sidebar v-if="!$pagination" v-show="$vuetify.breakpoint.lgAndUp"/>
         </template>
     </VuetifyBase>
 </template>

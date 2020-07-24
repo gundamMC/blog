@@ -1,8 +1,8 @@
 <template>
-    <VuetifyBase :content-width="8">
+    <VuetifyBase :content-width="7">
         <template #content>
             <v-row justify="center" class="my-16">
-                <v-col sm="6" xs="12">
+                <v-col lg="6" sm="8" xs="12">
                     <h2 class="text-h2" style="border-bottom: 0">Shuming Xu</h2>
                     <h4 class="text-h4">software developer, explorer, & student @ Berkeley</h4>
                     <Content slot-key="about"/>
@@ -29,15 +29,6 @@
                         class="grey lighten-2"
                         contain
                     >
-                        <template v-slot:placeholder>
-                            <v-row
-                                class="fill-height ma-0"
-                                align="center"
-                                justify="center"
-                            >
-                                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                            </v-row>
-                        </template>
                     </v-img>
 
                     <h4 class="text-h4 mt-4 mb-0"><a :href="mostRecent.path" class="link"> {{ mostRecent.title }} </a></h4>

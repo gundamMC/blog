@@ -1,6 +1,5 @@
 <template>
     <div class="component-sticky">
-
         <div v-if="$page.headers && $page.headers.length > 1" class="mb-4">
             <h3>Table of Contents</h3>
             <Headers/>

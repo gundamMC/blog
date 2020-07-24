@@ -1,10 +1,10 @@
 <template>
     <v-app>
         <v-app-bar app elevate-on-scroll class="px-2 px-lg-12 px-xl-16">
-            <v-toolbar-title v-if="$vuetify.breakpoint.smAndUp" class="ml-2 ml-lg-12 ml-xl-16">
+            <v-toolbar-title v-show="$vuetify.breakpoint.smAndUp" class="ml-2 ml-lg-12 ml-xl-16">
                 <a href="/" class="link"> Shuming Xu </a>
             </v-toolbar-title>
-            <v-spacer v-if="$vuetify.breakpoint.smAndUp"></v-spacer>
+            <v-spacer v-show="$vuetify.breakpoint.smAndUp"></v-spacer>
             <v-toolbar-items class="mr-2 mr-lg-12 mr-xl-16 px-sm-0">
                 <v-btn text href="/posts/">Posts</v-btn>
                 <v-btn text href="/projects/">Projects</v-btn>
@@ -30,11 +30,11 @@
         <v-main>
             <v-container fluid>
                 <v-row justify="center">
-                    <v-col :md="2" v-if="$vuetify.breakpoint.lgAndUp"/>
-                    <v-col :lg="contentWidth + 1" :xl="contentWidth" xs="8"  >
+                    <v-col md="2" sm="0"/>
+                    <v-col :md="contentWidth + 1" :xl="contentWidth" cols="12">
                         <slot name="content" />
                     </v-col>
-                    <v-col :md="2" v-if="$vuetify.breakpoint.lgAndUp">
+                    <v-col md="2" sm="0">
                         <slot name="sidebarRight"/>
                     </v-col>
                 </v-row>
