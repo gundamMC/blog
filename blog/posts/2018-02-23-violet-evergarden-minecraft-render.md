@@ -13,5 +13,5 @@ A Minecraft-style render of the anime Violet Evergarden using Cinema 4D. The ski
 
 ## Behind the Scenes
 
-![Violet Evergarden Render Behind the Scenes 1](/images/violet-evergarden-minecraft/Violet-Evergarden-C4D.jpg)
-![Violet Evergarden Render Behind the Scenes 2](/images/violet-evergarden-minecraft/Violet-Evergarden-C4D-2.jpg)
+![Violet Evergarden Render Behind the Scenes 1](/images/violet-evergarden-minecraft/Violet-Evergarden-C4D.png)
+![Violet Evergarden Render Behind the Scenes 2](/images/violet-evergarden-minecraft/Violet-Evergarden-C4D-2.png)
