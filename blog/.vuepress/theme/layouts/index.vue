@@ -2,7 +2,7 @@
     <VuetifyBase :content-width="8">
         <template #content>
             <v-row justify="center" class="my-16">
-                <v-col cols="6">
+                <v-col sm="6" xs="12">
                     <h2 class="text-h2" style="border-bottom: 0">Shuming Xu</h2>
                     <h4 class="text-h4">software developer, explorer, & student @ Berkeley</h4>
                     <Content slot-key="about"/>
@@ -21,7 +21,7 @@
             <v-divider/>
 
             <v-row justify="center" class="my-16">
-                <v-col cols="5">
+                <v-col xs="12" sm="5">
                     <!-- Most recent post -->
                     <h3 class="text-h3">Latest Posts</h3>
                     <v-img
@@ -44,7 +44,7 @@
                     <DateTagSpan :page="mostRecent" :hideUpdate="true"/>
                 </v-col>
 
-                <v-col cols="5" class="mt-16">
+                <v-col xs="12" sm="5" class="mt-md-16 mt-sm-0">
                     <div v-for="post in recentPosts">
                         <h5 class="text-h5 mb-0"><a :href="post.path" class="link"> {{post.title}} </a></h5>
                         <DateTagSpan :page="post" :hideUpdate="true"/>

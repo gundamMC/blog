@@ -1,15 +1,19 @@
 <template>
     <v-row class="mt-6">
-        <v-col cols="3">
+
+        <v-col cols="3" v-if="$vuetify.breakpoint.smAndUp">
             <p text-subtitle-1>
                 {{ resolvePostDate(page.frontmatter.date) }}
             </p>
         </v-col>
-        <v-spacer></v-spacer>
-        <v-col cols="3" v-if="page.frontmatter.image">
+
+        <v-spacer v-if="$vuetify.breakpoint.smAndUp"></v-spacer>
+
+        <v-col cols="3" v-if="page.frontmatter.image && $vuetify.breakpoint.smAndUp">
             <v-img :src="page.frontmatter.image" :alt="page.frontmatter.title" contain max-width="100%" />
         </v-col>
-        <v-col cols="6">
+
+        <v-col sm="6" xs="12">
             <p v-if="this.page.frontmatter.tag" text-subtitle-2 class="font-weight-light mb-0">
                 <TagSpan :page-tags="this.page.frontmatter.tag" />
             </p>

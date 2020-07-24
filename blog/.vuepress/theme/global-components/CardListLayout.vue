@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-h2 mb-16">
+        <h1 class="text-h2 mb-16 ml-4">
             {{ $frontmatter.title }}
         </h1>
 
